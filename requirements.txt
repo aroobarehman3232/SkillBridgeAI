@@ -1,0 +1,10 @@
+langchain 
+streamlit 
+pymupdf 
+requests 
+python-docx 
+pdfkit
+python-dotenv
+langchain
+langchain-openai
+langchain_classic
