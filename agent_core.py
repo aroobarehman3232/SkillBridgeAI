@@ -7,7 +7,6 @@ from langchain_core.chat_history import InMemoryChatMessageHistory
 from langchain_core.tools import ToolException
 from langchain_core.output_parsers import CommaSeparatedListOutputParser
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.tools import Tool
 from langchain_openai import ChatOpenAI
 from langchain_classic.agents import initialize_agent, AgentType
@@ -275,4 +274,5 @@ def create_career_agent(llm, resume_text: str = None):
         memory=ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     )
     
+
     return agent
